@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiVridh — Digital Literacy for Senior Citizens</title>
+  <meta name="description" content="DigiVridh is a community-based digital literacy platform for senior citizens, inspired by the ITC e-Choupal model." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="light">
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#home" class="logo">
+        <span class="logo-mark">DV</span>
+        <span class="logo-text">DigiVridh</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" data-en="About" data-hi="परिचय">About</a>
+        <a href="#problem" data-en="Problem" data-hi="समस्या">Problem</a>
+        <a href="#solution" data-en="Solution" data-hi="समाधान">Solution</a>
+        <a href="#features" data-en="Features" data-hi="विशेषताएं">Features</a>
+        <a href="#videos" data-en="Videos" data-hi="वीडियो">Videos</a>
+        <a href="#impact" data-en="Impact" data-hi="प्रभाव">Impact</a>
+        <a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a>
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode" data-light-en="🌙 Dark" data-light-hi="🌙 डार्क" data-dark-en="☀️ Light" data-dark-hi="☀️ लाइट">🌙 Dark</button>
+        <button class="lang-btn" id="langToggle">हिंदी</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow" data-en="Community-powered digital dignity" data-hi="समुदाय-आधारित डिजिटल सम्मान">Community-powered digital dignity</span>
+          <h1 data-en="Helping Senior Citizens Learn Digital Skills with Confidence" data-hi="वरिष्ठ नागरिकों को आत्मविश्वास के साथ डिजिटल कौशल सिखाना">
+            Helping Senior Citizens Learn Digital Skills with Confidence
+          </h1>
+          <p data-en="DigiVridh is a professional community-based platform that combines trusted peer mentors, digital learning centers, multilingual support, and practical training for payments, travel, communication, and cyber safety." data-hi="डिजीवृद्ध एक पेशेवर समुदाय-आधारित मंच है जो भरोसेमंद साथी मार्गदर्शक, डिजिटल शिक्षण केंद्र, बहुभाषी सहायता और भुगतान, यात्रा, संचार तथा साइबर सुरक्षा के लिए व्यावहारिक प्रशिक्षण को जोड़ता है।">
+            DigiVridh is a professional community-based platform that combines trusted peer mentors, digital learning centers, multilingual support, and practical training for payments, travel, communication, and cyber safety.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#solution" class="btn btn-primary" data-en="Explore Solution" data-hi="समाधान देखें">Explore Solution</a>
+            <a href="#videos" class="btn btn-secondary" data-en="Watch Videos" data-hi="वीडियो देखें">Watch Videos</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <h3>140M+</h3>
+              <p data-en="Senior citizens in India" data-hi="भारत में वरिष्ठ नागरिक">Senior citizens in India</p>
+            </div>
+            <div class="stat-card">
+              <h3>78%</h3>
+              <p data-en="Estimated digitally excluded seniors" data-hi="अनुमानित डिजिटल रूप से वंचित वरिष्ठ">Estimated digitally excluded seniors</p>
+            </div>
+            <div class="stat-card">
+              <h3>90 Days</h3>
+              <p data-en="Focused MVP learning cycle" data-hi="केंद्रित एमवीपी सीखने की अवधि">Focused MVP learning cycle</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-media-card">
+            <img src="hero-family.avif" alt="Senior citizen learning digital technology with family support" class="hero-image" />
+            <div class="hero-floating hero-floating-top">
+              <span class="mini-label" data-en="Trusted Support" data-hi="भरोसेमंद सहयोग">Trusted Support</span>
+              <strong data-en="DigiDost + Family" data-hi="डिजीडोस्ट + परिवार">DigiDost + Family</strong>
+            </div>
+            <div class="hero-floating hero-floating-bottom">
+              <span class="mini-label" data-en="Practical Skills" data-hi="व्यावहारिक कौशल">Practical Skills</span>
+              <strong data-en="UPI • WhatsApp • IRCTC" data-hi="यूपीआई • व्हाट्सऐप • आईआरसीटीसी">UPI • WhatsApp • IRCTC</strong>
+            </div>
+          </div>
+          <div class="hero-side-cards">
+            <div class="mini-card">
+              <span class="badge" data-en="Inspired by e-Choupal" data-hi="ई-चौपाल से प्रेरित">Inspired by e-Choupal</span>
+              <h3 data-en="A trusted learning ecosystem for elders" data-hi="वरिष्ठों के लिए भरोसेमंद शिक्षण तंत्र">A trusted learning ecosystem for elders</h3>
+              <p data-en="Physical support, local facilitators, and a simple mobile experience together create meaningful digital confidence." data-hi="भौतिक सहयोग, स्थानीय मार्गदर्शक और सरल मोबाइल अनुभव मिलकर वास्तविक डिजिटल आत्मविश्वास बनाते हैं।">Physical support, local facilitators, and a simple mobile experience together create meaningful digital confidence.</p>
+            </div>
+            <div class="mini-card feature-mini-list">
+              <div data-en="✓ Digital Choupal Centres" data-hi="✓ डिजिटल चौपाल केंद्र">✓ Digital Choupal Centres</div>
+              <div data-en="✓ DigiDost Peer Facilitators" data-hi="✓ डिजीडोस्ट साथी मार्गदर्शक">✓ DigiDost Peer Facilitators</div>
+              <div data-en="✓ Retirement Group Sessions" data-hi="✓ रिटायरमेंट समूह सत्र">✓ Retirement Group Sessions</div>
+              <div data-en="✓ CyberSafe Awareness" data-hi="✓ साइबरसेफ जागरूकता">✓ CyberSafe Awareness</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag" data-en="About DigiVridh" data-hi="डिजीवृद्ध के बारे में">About DigiVridh</span>
+          <h2 data-en="A human-centered solution for digital inclusion" data-hi="डिजिटल समावेशन के लिए मानवीय समाधान">A human-centered solution for digital inclusion</h2>
+          <p data-en="DigiVridh is not just an app. It combines physical learning centers, trained peer facilitators, local communities, and a multilingual mobile experience to make digital learning easier for senior citizens." data-hi="डिजीवृद्ध केवल एक ऐप नहीं है। यह भौतिक शिक्षण केंद्र, प्रशिक्षित साथी मार्गदर्शक, स्थानीय समुदाय और बहुभाषी मोबाइल अनुभव को जोड़कर वरिष्ठ नागरिकों के लिए डिजिटल सीखना आसान बनाता है।">
+            DigiVridh is not just an app. It combines physical learning centers, trained peer facilitators, local communities, and a multilingual mobile experience to make digital learning easier for senior citizens.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <div class="cards-grid">
+            <article class="info-card reveal">
+              <div class="icon">🏠</div>
+              <h3 data-en="Community Anchored" data-hi="समुदाय से जुड़ा">Community Anchored</h3>
+              <p data-en="Learning happens in familiar spaces like RWAs, parks, community halls, and temples." data-hi="सीखना परिचित स्थानों जैसे आरडब्ल्यूए, पार्क, सामुदायिक भवन और मंदिरों में होता है।">Learning happens in familiar spaces like RWAs, parks, community halls, and temples.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="icon">🤝</div>
+              <h3 data-en="Trust-Driven" data-hi="विश्वास-आधारित">Trust-Driven</h3>
+              <p data-en="Peer facilitators called DigiDosts help seniors learn from people they already trust." data-hi="डिजीडोस्ट नामक साथी मार्गदर्शक वरिष्ठों को उन्हीं लोगों से सीखने में मदद करते हैं जिन पर वे भरोसा करते हैं।">Peer facilitators called DigiDosts help seniors learn from people they already trust.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="icon">🌐</div>
+              <h3 data-en="Multilingual" data-hi="बहुभाषी">Multilingual</h3>
+              <p data-en="The platform supports local languages, voice-based guidance, and simple step-by-step learning." data-hi="यह मंच स्थानीय भाषाओं, वॉइस-आधारित मार्गदर्शन और सरल चरणबद्ध सीखने का समर्थन करता है।">The platform supports local languages, voice-based guidance, and simple step-by-step learning.</p>
+            </article>
+          </div>
+          <div class="about-image reveal">
+            <img src="hero-family.avif" alt="Grandfather and child using smartphone together" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag" data-en="The Problem" data-hi="समस्या">The Problem</span>
+          <h2 data-en="Why senior citizens are left behind" data-hi="वरिष्ठ नागरिक पीछे क्यों रह जाते हैं">Why senior citizens are left behind</h2>
+          <p data-en="Many senior citizens want to use digital services, but fear, fraud, language barriers, and complex design make adoption difficult." data-hi="कई वरिष्ठ नागरिक डिजिटल सेवाओं का उपयोग करना चाहते हैं, लेकिन डर, धोखाधड़ी, भाषा की बाधाएं और जटिल डिज़ाइन उन्हें रोकते हैं।">
+            Many senior citizens want to use digital services, but fear, fraud, language barriers, and complex design make adoption difficult.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal"><strong>Technology Anxiety</strong><span data-en="Fear of pressing the wrong button or losing money online." data-hi="गलत बटन दबाने या ऑनलाइन पैसे खोने का डर।">Fear of pressing the wrong button or losing money online.</span></div>
+          <div class="timeline-item reveal"><strong>Language Barriers</strong><span data-en="Many apps are not friendly for seniors who prefer regional languages." data-hi="कई ऐप उन वरिष्ठों के लिए अनुकूल नहीं हैं जो क्षेत्रीय भाषाएं पसंद करते हैं।">Many apps are not friendly for seniors who prefer regional languages.</span></div>
+          <div class="timeline-item reveal"><strong>Fraud Risk</strong><span data-en="UPI scams, fake calls, phishing messages, and unsafe links create fear." data-hi="यूपीआई घोटाले, फर्जी कॉल, फ़िशिंग संदेश और असुरक्षित लिंक डर पैदा करते हैं।">UPI scams, fake calls, phishing messages, and unsafe links create fear.</span></div>
+          <div class="timeline-item reveal"><strong>Lack of Guidance</strong><span data-en="Seniors often depend on family or strangers for digital help." data-hi="वरिष्ठ अक्सर डिजिटल मदद के लिए परिवार या अजनबियों पर निर्भर होते हैं।">Seniors often depend on family or strangers for digital help.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="solution">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag" data-en="The Solution" data-hi="समाधान">The Solution</span>
+          <h2 data-en="An integrated model with physical + digital support" data-hi="भौतिक और डिजिटल सहयोग वाला एकीकृत मॉडल">An integrated model with physical + digital support</h2>
+          <p data-en="DigiVridh combines local centers, peer facilitators, retirement groups, travel clubs, and a mobile app into one practical ecosystem." data-hi="डिजीवृद्ध स्थानीय केंद्रों, साथी मार्गदर्शकों, रिटायरमेंट समूहों, यात्रा क्लबों और मोबाइल ऐप को एक व्यावहारिक इकोसिस्टम में जोड़ता है।">
+            DigiVridh combines local centers, peer facilitators, retirement groups, travel clubs, and a mobile app into one practical ecosystem.
+          </p>
+        </div>
+
+        <div class="solution-grid">
+          <article class="solution-card reveal">
+            <h3>01</h3>
+            <h4 data-en="Digital Choupal Centres" data-hi="डिजिटल चौपाल केंद्र">Digital Choupal Centres</h4>
+            <p data-en="Local neighborhood hubs with devices, internet, printed guides, and a safe practice environment." data-hi="स्थानीय केंद्र जहाँ उपकरण, इंटरनेट, प्रिंटेड गाइड और सुरक्षित अभ्यास वातावरण उपलब्ध हो।">Local neighborhood hubs with devices, internet, printed guides, and a safe practice environment.</p>
+          </article>
+          <article class="solution-card reveal">
+            <h3>02</h3>
+            <h4 data-en="DigiDost Network" data-hi="डिजीडोस्ट नेटवर्क">DigiDost Network</h4>
+            <p data-en="Trusted peer facilitators from the same community make learning feel comfortable and personal." data-hi="उसी समुदाय के भरोसेमंद साथी मार्गदर्शक सीखने को सहज और व्यक्तिगत बनाते हैं।">Trusted peer facilitators from the same community make learning feel comfortable and personal.</p>
+          </article>
+          <article class="solution-card reveal">
+            <h3>03</h3>
+            <h4 data-en="Retirement & Yatra Groups" data-hi="रिटायरमेंट और यात्रा समूह">Retirement & Yatra Groups</h4>
+            <p data-en="Existing social groups become natural learning communities for digital confidence." data-hi="मौजूदा सामाजिक समूह डिजिटल आत्मविश्वास के लिए स्वाभाविक शिक्षण समुदाय बनते हैं।">Existing social groups become natural learning communities for digital confidence.</p>
+          </article>
+          <article class="solution-card reveal">
+            <h3>04</h3>
+            <h4 data-en="Mobile App + CyberSafe" data-hi="मोबाइल ऐप और साइबरसेफ">Mobile App + CyberSafe</h4>
+            <p data-en="A simple multilingual app with practical modules, family support, and fraud-awareness training." data-hi="व्यावहारिक मॉड्यूल, परिवार सहयोग और धोखाधड़ी-जागरूकता प्रशिक्षण वाला सरल बहुभाषी ऐप।">A simple multilingual app with practical modules, family support, and fraud-awareness training.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag" data-en="Core Features" data-hi="मुख्य विशेषताएं">Core Features</span>
+          <h2 data-en="Designed specially for elderly learners" data-hi="विशेष रूप से वरिष्ठ शिक्षार्थियों के लिए डिज़ाइन किया गया">Designed specially for elderly learners</h2>
+        </div>
+
+        <div class="feature-showcase">
+          <div class="feature-box reveal">
+            <h3 data-en="Large fonts & simple UI" data-hi="बड़े फॉन्ट और सरल इंटरफेस">Large fonts & simple UI</h3>
+            <p data-en="Easy-to-read screens with fewer actions and clear guidance." data-hi="कम विकल्पों और स्पष्ट मार्गदर्शन वाली आसानी से पढ़ी जाने वाली स्क्रीन।">Easy-to-read screens with fewer actions and clear guidance.</p>
+          </div>
+          <div class="feature-box reveal">
+            <h3 data-en="Voice-first learning" data-hi="वॉइस-फर्स्ट सीखना">Voice-first learning</h3>
+            <p data-en="Support for voice commands and language-friendly navigation." data-hi="वॉइस कमांड और भाषा-अनुकूल नेविगेशन का समर्थन।">Support for voice commands and language-friendly navigation.</p>
+          </div>
+          <div class="feature-box reveal">
+            <h3 data-en="Daily digital challenges" data-hi="दैनिक डिजिटल चुनौतियां">Daily digital challenges</h3>
+            <p data-en="Simple tasks like checking balance, sending a voice note, or making a payment." data-hi="जैसे बैलेंस देखना, वॉइस नोट भेजना या भुगतान करना जैसी सरल गतिविधियां।">Simple tasks like checking balance, sending a voice note, or making a payment.</p>
+          </div>
+          <div class="feature-box reveal">
+            <h3 data-en="Family dashboard" data-hi="फैमिली डैशबोर्ड">Family dashboard</h3>
+            <p data-en="Family members can track progress and encourage seniors at home." data-hi="परिवार के सदस्य प्रगति देख सकते हैं और घर पर प्रोत्साहित कर सकते हैं।">Family members can track progress and encourage seniors at home.</p>
+          </div>
+          <div class="feature-box reveal">
+            <h3 data-en="CyberSafe training" data-hi="साइबरसेफ प्रशिक्षण">CyberSafe training</h3>
+            <p data-en="Interactive anti-fraud scenarios for safer digital behavior." data-hi="सुरक्षित डिजिटल व्यवहार के लिए इंटरएक्टिव एंटी-फ्रॉड अभ्यास।">Interactive anti-fraud scenarios for safer digital behavior.</p>
+          </div>
+          <div class="feature-box reveal">
+            <h3 data-en="WhatsApp micro-lessons" data-hi="व्हाट्सऐप माइक्रो-लेसन">WhatsApp micro-lessons</h3>
+            <p data-en="Short daily lessons delivered through familiar channels." data-hi="परिचित माध्यमों से भेजे जाने वाले छोटे दैनिक पाठ।">Short daily lessons delivered through familiar channels.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag" data-en="Reference Videos" data-hi="संदर्भ वीडियो">Reference Videos</span>
+          <h2 data-en="Useful YouTube videos for awareness and learning" data-hi="जागरूकता और सीखने के लिए उपयोगी यूट्यूब वीडियो">Useful YouTube videos for awareness and learning</h2>
+          <p data-en="These reference videos match DigiVridh themes like senior digital literacy, cyber safety, and train ticket booking." data-hi="ये संदर्भ वीडियो डिजीवृद्ध के विषयों जैसे वरिष्ठ डिजिटल साक्षरता, साइबर सुरक्षा और ट्रेन टिकट बुकिंग से संबंधित हैं।">
+            These reference videos match DigiVridh themes like senior digital literacy, cyber safety, and train ticket booking.
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <a class="video-card reveal" href="https://www.youtube.com/watch?v=h9G88dHUY0M" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/h9G88dHUY0M/hqdefault.jpg" alt="Digital Literacy for Senior Citizens thumbnail" />
+            <div class="video-body">
+              <h3 data-en="Digital Literacy for Senior Citizens" data-hi="वरिष्ठ नागरिकों के लिए डिजिटल साक्षरता">Digital Literacy for Senior Citizens</h3>
+              <p data-en="HelpAge India Programme" data-hi="हेल्पएज इंडिया कार्यक्रम">HelpAge India Programme</p>
+            </div>
+          </a>
+
+          <a class="video-card reveal" href="https://www.youtube.com/watch?v=R14UTB3Bixg" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/R14UTB3Bixg/hqdefault.jpg" alt="Cyber safety for senior citizens thumbnail" />
+            <div class="video-body">
+              <h3 data-en="Cyber Safety Tips for Senior Citizens" data-hi="वरिष्ठ नागरिकों के लिए साइबर सुरक्षा सुझाव">Cyber Safety Tips for Senior Citizens</h3>
+              <p data-en="UPI &amp; Bank Fraud Awareness" data-hi="यूपीआई और बैंक धोखाधड़ी जागरूकता">UPI &amp; Bank Fraud Awareness</p>
+            </div>
+          </a>
+
+          <a class="video-card reveal" href="https://www.youtube.com/watch?v=s24ZHMkeHeM" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/s24ZHMkeHeM/hqdefault.jpg" alt="IRCTC booking tutorial thumbnail" />
+            <div class="video-body">
+              <h3 data-en="Mobile Se Railway Ticket Kaise Book Kare" data-hi="मोबाइल से रेलवे टिकट कैसे बुक करें">Mobile Se Railway Ticket Kaise Book Kare</h3>
+              <p data-en="IRCTC Booking Tutorial" data-hi="आईआरसीटीसी बुकिंग ट्यूटोरियल">IRCTC Booking Tutorial</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="impact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag" data-en="Expected Impact" data-hi="अपेक्षित प्रभाव">Expected Impact</span>
+          <h2 data-en="Real change in confidence, safety, and independence" data-hi="आत्मविश्वास, सुरक्षा और स्वतंत्रता में वास्तविक बदलाव">Real change in confidence, safety, and independence</h2>
+        </div>
+
+        <div class="impact-grid">
+          <div class="impact-card reveal">
+            <h3>10,000+</h3>
+            <p data-en="Seniors completing 3 or more skill modules in 12 months" data-hi="12 महीनों में 3 या अधिक कौशल मॉड्यूल पूरे करने वाले वरिष्ठ">Seniors completing 3 or more skill modules in 12 months</p>
+          </div>
+          <div class="impact-card reveal">
+            <h3>7,500+</h3>
+            <p data-en="First independent UPI payments" data-hi="पहली स्वतंत्र यूपीआई भुगतान">First independent UPI payments</p>
+          </div>
+          <div class="impact-card reveal">
+            <h3>30%</h3>
+            <p data-en="Target reduction in cybercrime incidents in pilot areas" data-hi="पायलट क्षेत्रों में साइबर अपराध घटनाओं में लक्षित कमी">Target reduction in cybercrime incidents in pilot areas</p>
+          </div>
+          <div class="impact-card reveal">
+            <h3>70%</h3>
+            <p data-en="Participants reporting reduced isolation and stronger family connection" data-hi="प्रतिभागियों द्वारा कम अकेलापन और मजबूत पारिवारिक जुड़ाव की रिपोर्ट">Participants reporting reduced isolation and stronger family connection</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-box reveal">
+        <h2 data-en="Digital literacy is dignity" data-hi="डिजिटल साक्षरता सम्मान है">Digital literacy is dignity</h2>
+        <p data-en="DigiVridh envisions a future where every senior citizen can use digital tools confidently, safely, and independently." data-hi="डिजीवृद्ध एक ऐसे भविष्य की कल्पना करता है जहाँ हर वरिष्ठ नागरिक डिजिटल साधनों का उपयोग आत्मविश्वास, सुरक्षा और स्वतंत्रता के साथ कर सके।">
+          DigiVridh envisions a future where every senior citizen can use digital tools confidently, safely, and independently.
+        </p>
+        <a href="#contact" class="btn btn-primary" data-en="Get in Touch" data-hi="संपर्क करें">Get in Touch</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag" data-en="Get in Touch" data-hi="संपर्क करें">Get in Touch</span>
+          <h2 data-en="Let’s connect for collaboration, pilot programs, or community outreach" data-hi="सहयोग, पायलट प्रोग्राम या सामुदायिक पहुंच के लिए जुड़ें">Let’s connect for collaboration, pilot programs, or community outreach</h2>
+          <p data-en="Use the form below to send a message. It opens your email app with the details already filled in, so the contact section works directly on your device." data-hi="नीचे दिया गया फॉर्म उपयोग करें। यह आपके ईमेल ऐप को सभी विवरणों के साथ खोल देता है, ताकि संपर्क अनुभाग सीधे आपके डिवाइस पर काम करे।">
+            Use the form below to send a message. It opens your email app with the details already filled in, so the contact section works directly on your device.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card reveal">
+            <h3 data-en="Why contact DigiVridh?" data-hi="डिजीवृद्ध से क्यों जुड़ें?">Why contact DigiVridh?</h3>
+            <div class="contact-point">
+              <strong data-en="Pilot Partnerships" data-hi="पायलट साझेदारी">Pilot Partnerships</strong>
+              <p data-en="Schools, RWAs, NGOs, and senior groups can discuss pilot implementation." data-hi="स्कूल, RWA, NGO और वरिष्ठ समूह पायलट लागू करने पर चर्चा कर सकते हैं।">Schools, RWAs, NGOs, and senior groups can discuss pilot implementation.</p>
+            </div>
+            <div class="contact-point">
+              <strong data-en="CSR & Funding" data-hi="CSR और फंडिंग">CSR & Funding</strong>
+              <p data-en="Corporate and banking partners can explore digital inclusion collaborations." data-hi="कॉर्पोरेट और बैंकिंग साझेदार डिजिटल समावेशन सहयोग तलाश सकते हैं।">Corporate and banking partners can explore digital inclusion collaborations.</p>
+            </div>
+            <div class="contact-point">
+              <strong data-en="Community Support" data-hi="सामुदायिक सहयोग">Community Support</strong>
+              <p data-en="Retirement groups and families can ask about workshops, sessions, and training support." data-hi="रिटायरमेंट समूह और परिवार कार्यशालाओं, सत्रों और प्रशिक्षण सहयोग के बारे में पूछ सकते हैं।">Retirement groups and families can ask about workshops, sessions, and training support.</p>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="name" data-en="Full Name" data-hi="पूरा नाम">Full Name</label>
+                <input type="text" id="name" name="name" data-placeholder-en="Enter your name" data-placeholder-hi="अपना नाम लिखें" placeholder="Enter your name" required>
+              </div>
+              <div class="form-field">
+                <label for="email" data-en="Email Address" data-hi="ईमेल पता">Email Address</label>
+                <input type="email" id="email" name="email" data-placeholder-en="Enter your email" data-placeholder-hi="अपना ईमेल लिखें" placeholder="Enter your email" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="subject" data-en="Subject" data-hi="विषय">Subject</label>
+              <input type="text" id="subject" name="subject" data-placeholder-en="Write a short subject" data-placeholder-hi="संक्षिप्त विषय लिखें" placeholder="Write a short subject" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message" data-en="Message" data-hi="संदेश">Message</label>
+              <textarea id="message" name="message" rows="6" data-placeholder-en="Write your message here..." data-placeholder-hi="अपना संदेश यहाँ लिखें..." placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <div class="contact-actions">
+              <button type="submit" class="btn btn-primary" id="sendBtn" data-en="Send Message" data-hi="संदेश भेजें">Send Message</button>
+            </div>
+
+            <p class="form-note" data-en="This form uses your device email app (mailto), so it works without any backend hosting." data-hi="यह फॉर्म आपके डिवाइस के ईमेल ऐप (mailto) का उपयोग करता है, इसलिए बिना बैकएंड होस्टिंग के भी काम करता है।">
+              This form uses your device email app (mailto), so it works without any backend hosting.
+            </p>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3 data-en="DigiVridh" data-hi="डिजीवृद्ध">DigiVridh</h3>
+        <p data-en="A community-based digital empowerment platform for senior citizens." data-hi="वरिष्ठ नागरिकों के लिए समुदाय-आधारित डिजिटल सशक्तिकरण मंच।">
+          A community-based digital empowerment platform for senior citizens.
+        </p>
+      </div>
+      <div>
+        <h4 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h4>
+        <ul>
+          <li><a href="#about" data-en="About" data-hi="परिचय">About</a></li>
+          <li><a href="#solution" data-en="Solution" data-hi="समाधान">Solution</a></li>
+          <li><a href="#videos" data-en="Videos" data-hi="वीडियो">Videos</a></li>
+          <li><a href="#impact" data-en="Impact" data-hi="प्रभाव">Impact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Project Theme" data-hi="प्रोजेक्ट थीम">Project Theme</h4>
+        <p data-en="Digital Literacy for Senior Citizens" data-hi="वरिष्ठ नागरिकों के लिए डिजिटल साक्षरता">Digital Literacy for Senior Citizens</p>
+      
+      <div>
+        <br>
+        <h4>Contact</h4>
+        <p>Email: 0251mec047@niet.co.in</p>
+        <p>Phone: 7906698498</p>
+      </div>
+
+    </div>
+    <div class="container footer-bottom">
+      <p data-en="© 2026 DigiVridh. Designed from the NIET PBL report." data-hi="© 2026 डिजीवृद्ध। NIET PBL रिपोर्ट से डिज़ाइन किया गया।">© 2026 DigiVridh. Designed from the NIET PBL report.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
